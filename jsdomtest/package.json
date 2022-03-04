@@ -1,0 +1,20 @@
+{
+  "name": "jsdomtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "browserify main.js -of bundle.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsdom": "^19.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "jest": "^27.5.1"
+  }
+}

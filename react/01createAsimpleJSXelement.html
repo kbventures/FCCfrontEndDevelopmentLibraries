@@ -7,16 +7,13 @@
     <title>Document</title>
     <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="text/javascript">
-      const rootElement = document.getElementById('root');
-      const JSX = React.createElement('h1', {
-        children: 'Hello JSX!',
-      });
-      console.log(JSX);
-      ReactDOM.render(JSX, rootElement);
+    <script type="text/babel">
+      ReactDOM.render(<h1>Hello JSX!</h1>, document.getElementById('root'));
+
     </script>
   </body>
 </html>
