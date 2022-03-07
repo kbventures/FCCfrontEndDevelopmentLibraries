@@ -1,16 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import { render } from 'react-dom'
 
-// ReactDOM.render(
-//     <h1>Hello from JAVASCRIPT</h1>,
-//     document.querySelector(
-//       '#fromjs'
-//     )
-//   );
+// import App from './App.jsx'
 
-const JSX = <h1>Hello JSX!</h1>;
+import JSX from './fccexercises/react01.jsx'
 
-ReactDOM.render(
-  JSX,
-  document.getElementById('root'));
-// document.querySelector('#fromjs').innerHTML = `<h1>From index.js</h1>`;
+
+render(
+  <JSX />,
+  document.getElementById('app')
+)
