@@ -1,21 +1,26 @@
-import React from 'react'
-import { render } from 'enzyme'
-import Enzyme from 'enzyme'
+// The constant JSX should return an h1 element.
 
-import JSX from './fccexercises/react01.jsx'
+// assert(JSX.type === 'h1');
+// The h1 tag should include the text Hello JSX!
 
-describe('<JSX />', () => {
-  test('should render ', () => {
-    const wrapper = render(
-      <JSX />
-      )
-    //   const JSX1 = <h1>Hello JSX!</h1>;
+// assert(Enzyme.shallow(JSX).contains('Hello JSX!'));
 
-    console.log(wrapper.html())
-    // expect(wrapper.html().Enzyme.toequal('<h1>Hello JSX!</h1>'))
-    
 
-    //   expect(JSX.type === 'h1');
-    //   expect(JSX.innHTML === 'Hello  JSX!')
-    })
-})
+// MyComponent.test.js
+import React from 'react';
+import Enzyme, {shallow } from 'enzyme';
+import Adapter from '@wojtekmaj/enzyme-adapter-react-17'
+import JSX from './fccexercises/react01';
+
+Enzyme.configure({adapter: new Adapter()})
+
+
+describe("H1 tag should include the text: Hello JSX!", () => {
+  it("should render my component", () => {
+    const wrapper = shallow(<JSX />);
+
+    assert(wrapper.type === 'h1');
+    // assert(Enzyme.shallow(JSX).contains('Hello JSX!'));
+  
+  });
+});
