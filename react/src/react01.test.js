@@ -8,19 +8,31 @@
 
 // MyComponent.test.js
 import React from 'react';
-import Enzyme, {shallow } from 'enzyme';
-import Adapter from '@wojtekmaj/enzyme-adapter-react-17'
+import {shallow } from 'enzyme';
 import JSX from './fccexercises/react01';
+import {assert} from 'chai'
 
-Enzyme.configure({adapter: new Adapter()})
 
 
 describe("H1 tag should include the text: Hello JSX!", () => {
   it("should render my component", () => {
-    const wrapper = shallow(<JSX />);
+    // const wrapper = shallow(<JSX />);
+    // console.log(wrapper.debug())
+    // expect(wrapper.find('h1'));
+    // console.log(wrapper.find('h1').type())
+    // expect(wrapper.find('h1').text()).toContain('Hello JSX!')
+    
+    const element = <h1>Hello JSX!</h1>;
 
-    assert(wrapper.type === 'h1');
-    // assert(Enzyme.shallow(JSX).contains('Hello JSX!'));
-  
+    const wrapper2 = shallow(element);
+    console.log(element.type)
+    assert(element.type === 'h1');
+
+    assert(wrapper2.contains('Hello JSX!'))
+    assert(shallow(element).contains('Hello JSX!'))
   });
 });
+
+    
+
+  

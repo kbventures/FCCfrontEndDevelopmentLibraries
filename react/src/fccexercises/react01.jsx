@@ -13,11 +13,8 @@ import React from "react";
 // Class Version
 class App extends React.Component{
   render(){
-    return  <div>
-    <h1>Hello JSX!</h1>
-</div>
+    return      <h1>Hello JSX!</h1>
+
   }
-}
- 
- 
+} 
 export default App;
