@@ -1,14 +1,12 @@
-//Entry point default value is ./src/index.js
-// Output emits bundle by default to ./dist/main.js
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     mode: 'development',
     module: {
       rules: [
         {
-          test: /\.(jsx|js)$/,
+          test: /\.m?js$/,
           exclude: /node_modules/,
           use: {
             loader: 'babel-loader',
@@ -20,10 +18,10 @@ module.exports = {
         },
       ],
     },
-    plugins:[
+    plugins: [
       new HtmlWebpackPlugin({
-        template:'./public/index.html',
+        template:
+          './public/index.html',
       }),
     ],
   };
-
