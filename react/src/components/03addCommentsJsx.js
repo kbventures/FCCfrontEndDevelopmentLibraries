@@ -7,7 +7,7 @@ const JSX =
 {/* Comment */}
 </div>
 
-class React03 extends Component {
+class AddCommentsJsx extends Component {
   render() {
     return (    
        JSX 
@@ -15,4 +15,4 @@ class React03 extends Component {
   }
 }
 
-export default React03;
+export default AddCommentsJsx;

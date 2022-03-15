@@ -1,9 +1,10 @@
 import Add from './components/Add';
 import Counter from './components/Counter';
 import CounterList from './components/CounterList'
-import React01 from './components/React01'
-import React02 from './components/React02'
-import React03 from './components/React03'
+import CreateSimpleJsxElement from './components/01createSimpleJsxElement'
+import CreateComplexJsxElement from './components/02CreateComplexJsxElement'
+import AddCommentsJsx from './components/03addCommentsJsx'
+import RenderHtmlElementsToTheDom from './components/04renderReactElementsToTheDom'
 import React from 'react'
 
 function App() {
@@ -15,9 +16,10 @@ function App() {
         <header><Add /></header>
         <Counter />
         <CounterList />
-        <React01 />
-        <React02 />
-        <React03 />
+        <CreateSimpleJsxElement />
+        <CreateComplexJsxElement />
+        <AddCommentsJsx />
+        <RenderHtmlElementsToTheDom />
     </div>
   );
 }

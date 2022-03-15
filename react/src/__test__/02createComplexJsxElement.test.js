@@ -1,4 +1,4 @@
-import React02 from '../components/React02';
+import React02 from '../components/02CreateComplexJsxElement';
 describe('Create A Complex JSX Element', () => {
     it('The constant JSX should return a div element.', () => {
         const wrapper = shallow(<React02 />);

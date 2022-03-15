@@ -1,4 +1,4 @@
-import React01 from '../components/React01';
+import React01 from '../components/01createSimpleJsxElement';
 describe('Create a Simple JSX Element', () => {
     it('should render one <h1>', () => {
         let wrapper = shallow(<React01 />);

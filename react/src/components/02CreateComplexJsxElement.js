@@ -11,7 +11,7 @@ const JSX =
 </ul>
 </div>;
 
-class React02 extends Component {
+class CreateComplexJsxElement extends Component {
   render() {
     return (    
        JSX 
@@ -19,4 +19,4 @@ class React02 extends Component {
   }
 }
 
-export default React02;
+export default CreateComplexJsxElement;

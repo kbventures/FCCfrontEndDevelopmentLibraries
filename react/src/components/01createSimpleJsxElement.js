@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const JSX = <h1>Hello JSX!</h1>
 
-class React01 extends Component {
+class CreateSimpleJsxElement extends Component {
   render() {
     return (    
        JSX 
@@ -10,4 +10,4 @@ class React01 extends Component {
   }
 }
 
-export default React01;
+export default CreateSimpleJsxElement;
