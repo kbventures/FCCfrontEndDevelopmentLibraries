@@ -28,12 +28,3 @@ describe('Render HTML Elements to the DOM', () => {
       </div>)).toEqual(true)    
     })
 });
-
-
-// The constant JSX should return a div element.
-
-// The div should contain an h1 tag as the first element.
-
-// The div should contain a p tag as the second element.
-
-// The provided JSX element should render to the DOM node with id challenge-node.

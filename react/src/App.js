@@ -5,6 +5,7 @@ import CreateSimpleJsxElement from './components/01createSimpleJsxElement'
 import CreateComplexJsxElement from './components/02CreateComplexJsxElement'
 import AddCommentsJsx from './components/03addCommentsJsx'
 import RenderHtmlElementsToTheDom from './components/04renderReactElementsToTheDom'
+import DefineAnHtmlClassInJsx from './components/05defineAnHtmlClassInJsx'
 import React from 'react'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <CreateComplexJsxElement />
         <AddCommentsJsx />
         <RenderHtmlElementsToTheDom />
+        <DefineAnHtmlClassInJsx />
     </div>
   );
 }
