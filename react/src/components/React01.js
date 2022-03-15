@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const JSX = <h1>Hello JSX!</h1>
 
-class Add extends Component {
+class React01 extends Component {
   render() {
     return (    
        JSX 
@@ -10,4 +10,4 @@ class Add extends Component {
   }
 }
 
-export default Add;
+export default React01;

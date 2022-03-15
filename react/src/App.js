@@ -2,6 +2,7 @@ import Add from './components/Add';
 import Counter from './components/Counter';
 import CounterList from './components/CounterList'
 import React01 from './components/React01'
+import React02 from './components/React02'
 import React from 'react'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Counter />
         <CounterList />
         <React01 />
+        <React02 />
     </div>
   );
 }
