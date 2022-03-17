@@ -1,5 +1,5 @@
 import CreateAreactComponent from '../components/08createAreactComponent';
-describe('Learn About Self-Closing JSX Tags', () => {
+describe('Create A React Component', () => {
     it('MyComponent should return a div element..', () => {
         const wrapper = shallow(<CreateAreactComponent/>);
         const wrapperLength = wrapper.length;

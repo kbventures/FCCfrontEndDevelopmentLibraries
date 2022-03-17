@@ -9,6 +9,7 @@ import DefineAnHtmlClassInJsx from './components/05defineAnHtmlClassInJsx'
 import SelfClosingJsxTags from './components/06selfClosingJsxTags'
 import CreateStatelessFunctionalComponent from './components/07createStatelessFunctionalComponent'
 import CreateAreactComponent from './components/08createAreactComponent'
+import CreateAComponentWithComposition from './components/09createAComponentWithComposition'
 import React from 'react'
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <SelfClosingJsxTags />
         <CreateStatelessFunctionalComponent />
         <CreateAreactComponent />
+        <CreateAComponentWithComposition />
     </div>
   );
 }
