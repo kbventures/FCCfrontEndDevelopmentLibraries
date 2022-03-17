@@ -6,6 +6,7 @@ import CreateComplexJsxElement from './components/02CreateComplexJsxElement'
 import AddCommentsJsx from './components/03addCommentsJsx'
 import RenderHtmlElementsToTheDom from './components/04renderReactElementsToTheDom'
 import DefineAnHtmlClassInJsx from './components/05defineAnHtmlClassInJsx'
+import SelfClosingJsxTags from './components/06selfClosingJsxTags'
 import React from 'react'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <AddCommentsJsx />
         <RenderHtmlElementsToTheDom />
         <DefineAnHtmlClassInJsx />
+        <SelfClosingJsxTags />
     </div>
   );
 }
