@@ -21,6 +21,15 @@ describe('Learn About Self-Closing JSX Tags', () => {
 
     it('MyComponent should return JSX.', ()=>{
         const wrapper = shallow(<CreateStatelessFunctionalComponent />);
-        expect(wrapper.contains(<div>Some Text</div>)).toEqual(true)    
+        expect(wrapper.contains(<div>Some Text</div>)).toEqual(true) 
+        // console.log('CLASS COMPONENT')
+        // console.log('Shallow')
+        // console.log(wrapper.debug())
+        // console.log('Render')   
+        const renderWrapper = render(<CreateStatelessFunctionalComponent />);
+        // console.log(renderWrapper)
+        // console.log('Mount')
+        const mountWrapper = mount(<CreateStatelessFunctionalComponent />);
+        // console.log(mountWrapper.debug())
     })
 });

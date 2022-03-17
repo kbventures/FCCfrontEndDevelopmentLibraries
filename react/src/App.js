@@ -8,7 +8,7 @@ import RenderHtmlElementsToTheDom from './components/04renderReactElementsToTheD
 import DefineAnHtmlClassInJsx from './components/05defineAnHtmlClassInJsx'
 import SelfClosingJsxTags from './components/06selfClosingJsxTags'
 import CreateStatelessFunctionalComponent from './components/07createStatelessFunctionalComponent'
-// import CreateAreactComponent from './components/0'
+import CreateAreactComponent from './components/08createAreactComponent'
 import React from 'react'
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
         <DefineAnHtmlClassInJsx />
         <SelfClosingJsxTags />
         <CreateStatelessFunctionalComponent />
-        {/* <CreateAreactComponent /> */}
+        <CreateAreactComponent />
     </div>
   );
 }
