@@ -10,7 +10,7 @@ import SelfClosingJsxTags from './components/06selfClosingJsxTags'
 import CreateStatelessFunctionalComponent from './components/07createStatelessFunctionalComponent'
 import CreateAreactComponent from './components/08createAreactComponent'
 import CreateAComponentWithComposition from './components/09createAComponentWithComposition'
-import UseReactToRenderNestedComponents from './components/10useReactToRenderNestedComponents'
+import {TypesOfFood} from './components/10useReactToRenderNestedComponents'
 import React from 'react'
 
 function App() {
@@ -31,7 +31,8 @@ function App() {
         <CreateStatelessFunctionalComponent />
         <CreateAreactComponent />
         <CreateAComponentWithComposition />
-        <UseReactToRenderNestedComponents />
+        {/* Use React To Render Nested Components */}
+        <TypesOfFood />
     </div>
   );
 }

@@ -11,7 +11,8 @@ describe('Create A Complex JSX Element', () => {
     it('The constant JSX should return a div element.', () => {
         const wrapperLength = wrapper.length;
         expect(wrapperLength).toEqual(1)
-        expect(wrapper.at(0).exists('div') )
+        expect(wrapper.at(0).exists('div')).toBe(true)
+
     });
 
     it('div should contain an h1 tax as the first element', ()=>{
