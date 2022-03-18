@@ -17,7 +17,6 @@ describe('Use React to Render Nested Components', () => {
 });
 
     it('The TypesOfFood component should return the Fruits component', ()=>{
-        console.log(wrapperTypesOfFood.debug())
         expect(wrapperTypesOfFood.children().length).toEqual(3)   
         expect(wrapperTypesOfFood.children(0).at(1).exists('Fruits')).toBe(true)
     })

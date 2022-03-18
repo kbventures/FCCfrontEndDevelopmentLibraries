@@ -12,6 +12,8 @@ import CreateAreactComponent from './components/08createAreactComponent'
 import CreateAComponentWithComposition from './components/09createAComponentWithComposition'
 import {TypesOfFood} from './components/10useReactToRenderNestedComponents'
 import {TypesOfFood11} from './components/11ComposeReactComponents'
+import {TypesOfFood12} from './components/12RenderAClassComponentToTheDom'
+
 import React from 'react'
 
 function App() {
@@ -36,6 +38,8 @@ function App() {
         <TypesOfFood />
         {/* Compose React Elements */}
         <TypesOfFood11 />
+        {/* Render a class component to the DOM */}
+        <RenderAClassComponentToTheDom />
     </div>
   );
 }
