@@ -11,6 +11,7 @@ import CreateStatelessFunctionalComponent from './components/07createStatelessFu
 import CreateAreactComponent from './components/08createAreactComponent'
 import CreateAComponentWithComposition from './components/09createAComponentWithComposition'
 import {TypesOfFood} from './components/10useReactToRenderNestedComponents'
+import {TypesOfFood11} from './components/11ComposeReactComponents'
 import React from 'react'
 
 function App() {
@@ -33,6 +34,8 @@ function App() {
         <CreateAComponentWithComposition />
         {/* Use React To Render Nested Components */}
         <TypesOfFood />
+        {/* Compose React Elements */}
+        <TypesOfFood11 />
     </div>
   );
 }
