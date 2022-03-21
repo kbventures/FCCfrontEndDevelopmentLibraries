@@ -13,7 +13,8 @@ import CreateAComponentWithComposition from './components/09createAComponentWith
 import {TypesOfFood} from './components/10useReactToRenderNestedComponents'
 import {TypesOfFood11} from './components/11ComposeReactComponents'
 import {TypesOfFood12} from './components/12RenderAClassComponentToTheDom'
-
+import {Calendar} from './components/13passPropsToAStatelessFunctionalComponent'
+import {ToDo} from './components/14passAnArrayAsProps'
 import React from 'react'
 
 function App() {
@@ -39,7 +40,11 @@ function App() {
         {/* Compose React Elements */}
         <TypesOfFood11 />
         {/* Render a class component to the DOM */}
-        <RenderAClassComponentToTheDom />
+        <TypesOfFood12 />
+        {/* Pass Props To A Stateless Functional Component */}
+        <Calendar />
+        {/* Pass An Array As Props */}
+        <ToDo />
     </div>
   );
 }

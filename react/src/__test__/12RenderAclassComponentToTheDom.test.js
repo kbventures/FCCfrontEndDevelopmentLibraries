@@ -30,11 +30,6 @@ describe('Render a Class Component to the DOM', () => {
     })
 
     it('The TypesOfFood component should render to the DOM within the div with the id challenge-node.', ()=>{
-        // console.log(wrapperTypesOfFood.debug())
-        // expect(wrapperTypesOfFood.find('id="challenge-node"')).to.have.lengthOf(1);
-        // expect(wrapperTypesOfFood.find('#challenge-node')).to.have.lengthOf(1);
-
-        // console.log(wrapperTypesOfFood.debug())
         expect(wrapperTypesOfFood.contains(<div id="challenge-node">
         <h1>
           Types of Food:
