@@ -15,6 +15,7 @@ import {TypesOfFood11} from './components/11ComposeReactComponents'
 import {TypesOfFood12} from './components/12RenderAClassComponentToTheDom'
 import {Calendar} from './components/13passPropsToAStatelessFunctionalComponent'
 import {ToDo} from './components/14passAnArrayAsProps'
+import ShoppingCart from './components/15useDefaultProps'
 import React from 'react'
 
 function App() {
@@ -45,6 +46,8 @@ function App() {
         <Calendar />
         {/* Pass An Array As Props */}
         <ToDo />
+        {/* Use Default Props  */}
+        <ShoppingCart />
     </div>
   );
 }
