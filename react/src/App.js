@@ -16,6 +16,7 @@ import {TypesOfFood12} from './components/12RenderAClassComponentToTheDom'
 import {Calendar} from './components/13passPropsToAStatelessFunctionalComponent'
 import {ToDo} from './components/14passAnArrayAsProps'
 import ShoppingCart from './components/15useDefaultProps'
+import {ShoppingCart16} from './components/16overrideDefaultProps'
 import React from 'react'
 
 function App() {
@@ -48,6 +49,8 @@ function App() {
         <ToDo />
         {/* Use Default Props  */}
         <ShoppingCart />
+        {/* Override Default Props */}
+        <ShoppingCart16/>
     </div>
   );
 }

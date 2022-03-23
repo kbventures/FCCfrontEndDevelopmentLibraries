@@ -1,7 +1,6 @@
 import ShoppingCart from '../components/15useDefaultProps';
 
 
-// The ShoppingCart component should render.
 
 describe('Pass Array As Props', () => {
 
@@ -16,7 +15,14 @@ describe('Pass Array As Props', () => {
     it('The ToDo component should return a single outer div.', () => {  
         const props = wrapperShoppingCartMount.props()   
         expect(props).toEqual({ items: 0 })
-    });  
-        
+
+
+    });
+    
+    it('The ShoppingCart component should render.', () => {  
+        expect(wrapperShoppingCartMount.contains(<ShoppingCart />)).toEqual(true)   
+    });
 });
+
+
 
