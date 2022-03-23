@@ -19,6 +19,7 @@ import ShoppingCart from './components/15useDefaultProps'
 import {ShoppingCart16} from './components/16overrideDefaultProps'
 import {ShoppingCart17} from './components/17usePropTypesToDefineThePropsYouExpect'
 import {App18} from './components/18accessPropsUsingThisProps'
+import {CampSite19} from './components/19reviewUsingPropsWithStatelessFunctionalComponents'
 import React from 'react'
 
 function App() {
@@ -57,6 +58,8 @@ function App() {
         <ShoppingCart17 />
         {/* Access Props Using this.props */}
         <App18 />
+        {/* Review Using Props With Stateless Functional Components */}
+        <CampSite19 />  
     </div>
   );
 }
