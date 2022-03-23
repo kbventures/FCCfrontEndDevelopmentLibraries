@@ -18,6 +18,7 @@ import {ToDo} from './components/14passAnArrayAsProps'
 import ShoppingCart from './components/15useDefaultProps'
 import {ShoppingCart16} from './components/16overrideDefaultProps'
 import {ShoppingCart17} from './components/17usePropTypesToDefineThePropsYouExpect'
+import {App18} from './components/18accessPropsUsingThisProps'
 import React from 'react'
 
 function App() {
@@ -54,6 +55,8 @@ function App() {
         <ShoppingCart16/>
         {/* Use PropTypes To Define The Props You Expect */}
         <ShoppingCart17 />
+        {/* Access Props Using this.props */}
+        <App18 />
     </div>
   );
 }

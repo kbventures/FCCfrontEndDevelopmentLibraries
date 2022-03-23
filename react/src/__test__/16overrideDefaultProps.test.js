@@ -20,7 +20,6 @@ describe('Pass Array As Props', () => {
    });
 
     it('The component ShoppingCart should render.', () => {  
-       console.log(wrapperShoppingCartMount.debug())
        expect(wrapperShoppingCartMount.contains(<ShoppingCart16>
         <Items quantity={10}>
           <h1>
@@ -39,7 +38,6 @@ describe('Pass Array As Props', () => {
     }); 
 
     it('The Items component should have a prop of { quantity: 10 } passed from the ShoppingCart component.', () => {  
-         console.log(wrapperShoppingCartShallow.debug())
         expect(wrapperShoppingCartShallow.contains(<Items quantity={10} />)).toEqual(true) 
     });
         
