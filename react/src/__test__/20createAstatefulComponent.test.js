@@ -1,4 +1,4 @@
-import {CampSite19, Camper} from '../components/19reviewUsingPropsWithStatelessFunctionalComponents';
+import StatefulComponent20 from '../components/20createAstatefulComponent';
 
 
 // The CampSite component should render.
@@ -12,16 +12,13 @@ import {CampSite19, Camper} from '../components/19reviewUsingPropsWithStatelessF
 // The Camper component should contain a p element with only the text from the name prop.
 describe('Pass Array As Props', () => {
 
-    let wrapperCampSite19Mount;
-    let wrapperCampSite19Shallow;
-    let wrapperCamperMount;
-    let wrapperCamperShallow;
+    let wrapperStatefulComponentMount;
+    let wrapperStatefulComponentShallow;
 
     beforeEach(() => {
-        wrapperCampSite19Mount = mount(<CampSite19 />);
-        wrapperCampSite19Shallow = shallow(<CampSite19 />);
-        wrapperCamperMount = mount(<Camper />);
-        wrapperCamperShallow = shallow(<Camper />);
+        wrapperStatefulComponentMount = mount(<StatefulComponent20 />);
+        wrapperStatefulComponentShallow = shallow(<StatefulComponent20 />);
+
    });
 
     it('The App component should return a single div element', () => {
