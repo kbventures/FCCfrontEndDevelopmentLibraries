@@ -1,4 +1,5 @@
 import DefineAnHtmlClassInJsx from '../components/05defineAnHtmlClassInJsx';
+
 describe('Define an HTML Class in JSX', () => {
 
     let wrapper;

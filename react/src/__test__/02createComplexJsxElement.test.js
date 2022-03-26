@@ -1,6 +1,5 @@
 import React02 from '../components/02CreateComplexJsxElement';
 
-
 describe('Create A Complex JSX Element', () => {
 
     let wrapper;

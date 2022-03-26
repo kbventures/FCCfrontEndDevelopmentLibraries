@@ -3,7 +3,7 @@ import React from "react"
 export const CurrentDate = (props) =>{
     return(
     <div>
-        <p>Current date: {props.date}</p>
+        <p>Current date:{props.date}</p>
     </div>
     )
 }

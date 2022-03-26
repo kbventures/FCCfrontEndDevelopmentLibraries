@@ -1,5 +1,12 @@
 import {ShoppingCart16, Items} from '../components/16overrideDefaultProps';
 
+// The component ShoppingCart should render.
+
+// The component Items should render.
+
+// The Items component should have a prop of { quantity: 10 } passed from the ShoppingCart component.
+
+
 describe('Pass Array As Props', () => {
 
     let wrapperShoppingCartMount;

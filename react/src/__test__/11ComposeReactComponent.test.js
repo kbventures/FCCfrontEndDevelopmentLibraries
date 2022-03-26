@@ -14,7 +14,7 @@ describe('Use React to Render Nested Components', () => {
     it('The TypesOfFood component should return a single div element', () => {
         expect(wrapperTypesOfFood.length).toEqual(1)   
         expect(wrapperTypesOfFood.at(0).exists('div')).toBe(true)     
-});
+    });
 
     it('The TypesOfFood component should return the Fruits component', ()=>{
         expect(wrapperTypesOfFood.children().length).toEqual(3)   

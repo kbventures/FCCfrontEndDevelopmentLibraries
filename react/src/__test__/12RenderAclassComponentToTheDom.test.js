@@ -1,5 +1,7 @@
 import {TypesOfFruit, TypesOfFood12, Fruits, Vegetables} from '../components/12RenderAClassComponentToTheDom';
 
+// The TypesOfFood component should render to the DOM within the div with the id challenge-node.
+
 describe('Render a Class Component to the DOM', () => {
 
     let wrapperTypesOfFruit;

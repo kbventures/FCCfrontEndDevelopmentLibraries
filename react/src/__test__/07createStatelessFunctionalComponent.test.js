@@ -1,4 +1,8 @@
 import CreateStatelessFunctionalComponent from '../components/07createStatelessFunctionalComponent';
+
+// MyComponent should return JSX.
+
+
 describe('Learn About Self-Closing JSX Tags', () => {
 
     let wrapper;

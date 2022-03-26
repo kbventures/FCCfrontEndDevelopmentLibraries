@@ -20,7 +20,7 @@ export const List = (props) => {
           <h2>Today</h2>
           <List tasks={["Walk", "Cook", "Bake"]}/>
           <h2>Tomorrow</h2>
-          <List tasks={["Walk", "Cook", "Bake"]}/>
+          <List tasks={["Study", "Code", "Eat"]}/>
         </div>
       );
     }

@@ -1,7 +1,5 @@
 import {ShoppingCart17, Items} from '../components/17usePropTypesToDefineThePropsYouExpect';
 
-
-
 // The ShoppingCart component should render.
 
 // The Items component should include a propTypes check to require a value for quantity and ensure that its value is a number.

@@ -1,5 +1,8 @@
 import ShoppingCart from '../components/15useDefaultProps';
 
+// The ShoppingCart component should render.
+
+// The ShoppingCart component should have a default prop of { items: 0 }.
 
 
 describe('Pass Array As Props', () => {

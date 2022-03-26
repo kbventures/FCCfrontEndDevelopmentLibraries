@@ -1,16 +1,12 @@
 import StatefulComponent20 from '../components/20createAstatefulComponent';
 
 
-// The CampSite component should render.
+// StatefulComponent should exist and render.
 
-// The Camper component should render.
+// The state of StatefulComponent should be initialized with a property name set to a string.
 
-// The Camper component should include default props which assign the string CamperBot to the key name.
 
-// The Camper component should include prop types which require the name prop to be of type string.
-
-// The Camper component should contain a p element with only the text from the name prop.
-describe('Pass Array As Props', () => {
+describe('Stateful Component', () => {
 
     let wrapperStatefulComponentMount;
     let wrapperStatefulComponentShallow;
@@ -21,7 +17,19 @@ describe('Pass Array As Props', () => {
 
    });
 
-    it('The App component should return a single div element', () => {
-  
-    });        
+   it('The property name in the state of StatefulComponent should render in the h1 element.', () => {
+    const text = wrapperStatefulComponentShallow.children().at(0).text()
+    expect(text).toBe('Mathieu')
+});
+
+it('StatefulComponent should render a div and an h1 element.', () => {
+    const wrapperLengthParent = wrapperStatefulComponentShallow.length;
+    const wrapperLengthChild = wrapperStatefulComponentShallow.children().length;
+    expect(wrapperLengthParent).toEqual(1)
+    expect(wrapperLengthChild).toEqual(1)
+    const h1Element = wrapperStatefulComponentShallow.children().type();
+    expect(h1Element).toEqual('h1');
+    const divElement = wrapperStatefulComponentShallow.type();
+    expect(divElement).toEqual('div');
+});
 });

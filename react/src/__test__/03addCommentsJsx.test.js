@@ -1,11 +1,17 @@
 import AddCommentsJsx from '../components/03addCommentsJsx';
-describe('Add Comments in JSX', () => {
+
+// The JSX should use valid comment syntax.
+
+describe('Add Comment JSX', () => {
 
     let wrapper;
+    let wrapperMount;
 
     beforeEach(() => {
         wrapper = shallow(<AddCommentsJsx />);
-   });
+        wrapperMount = mount(<AddCommentsJsx />);
+
+    });
     it('The constant JSX should return a div element.', () => {
         const wrapperLength = wrapper.length;
         expect(wrapperLength).toEqual(1)
@@ -25,12 +31,5 @@ describe('Add Comments in JSX', () => {
             <h1>This is a block of JSX</h1>
             <p>Here's a subtitle</p>
             </div>)).toEqual(true)
-    })
-
-    it('The JSX should use valid comment syntax', ()=>{
-        expect(wrapper.contains(<div>
-            <h1>This is a block of JSX</h1>
-            <p>Here's a subtitle</p>
-            </div>)).toEqual(true)     
     })
 });
