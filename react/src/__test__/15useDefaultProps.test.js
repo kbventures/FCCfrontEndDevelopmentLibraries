@@ -18,8 +18,6 @@ describe('Pass Array As Props', () => {
     it('The ToDo component should return a single outer div.', () => {  
         const props = wrapperShoppingCartMount.props()   
         expect(props).toEqual({ items: 0 })
-
-
     });
     
     it('The ShoppingCart component should render.', () => {  

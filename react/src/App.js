@@ -21,6 +21,7 @@ import {ShoppingCart17} from './components/17usePropTypesToDefineThePropsYouExpe
 import {App18} from './components/18accessPropsUsingThisProps'
 import {CampSite19} from './components/19reviewUsingPropsWithStatelessFunctionalComponents'
 import CreateAstatefulComponent20 from './components/20createAstatefulComponent'
+import RenderStateInTheUserInterface from './components/21renderStateInTheUserInterface';
 import React from 'react'
 
 function App() {
@@ -63,6 +64,7 @@ function App() {
         <CampSite19 /> 
          {/*Create A Stateful Component  */}
          <CreateAstatefulComponent20 />
+         <RenderStateInTheUserInterface />
     </div>
   );
 }

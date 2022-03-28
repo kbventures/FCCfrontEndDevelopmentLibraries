@@ -1,15 +1,9 @@
 import {CampSite19, Camper} from '../components/19reviewUsingPropsWithStatelessFunctionalComponents';
 
-
-// The CampSite component should render.
-
-// The Camper component should render.
-
 // The Camper component should include default props which assign the string CamperBot to the key name.
 
 // The Camper component should include prop types which require the name prop to be of type string.
 
-// The Camper component should contain a p element with only the text from the name prop.
 describe('Pass Array As Props', () => {
 
     let wrapperCampSite19Mount;
@@ -24,7 +18,29 @@ describe('Pass Array As Props', () => {
         wrapperCamperShallow = shallow(<Camper />);
    });
 
-    it('The App component should return a single div element', () => {
-  
-    });        
+    it('The CampSite component should render.', () => {
+        expect(wrapperCampSite19Mount.contains(<CampSite19>
+            <div>
+              <Camper name="CamperBot">
+                <p>
+                  CamperBot
+                </p>
+              </Camper>
+            </div>
+          </CampSite19>))
+    });
+    
+    it('The Camper component should render', () => {
+        expect(wrapperCamperMount.contains( <Camper name="CamperBot">
+        <p>
+          CamperBot
+        </p>
+      </Camper>))
+    });
+
+
+    it('The Camper component should contain a p element with only the text from the name prop.', () => {
+        const text = wrapperCamperMount.find('p').text()
+        expect(text).toEqual('CamperBot')
+    });
 });
